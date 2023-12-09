@@ -1,10 +1,3 @@
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/catiaspsilva/README-template">
-    <img src="images/gators.jpg" alt="Logo" width="150" height="150">
-  </a>
-
   <h3 align="center">ASL Recognition using Deep Convolutional Neural Network</h3>
 
   <!-- <p align="center">
@@ -51,7 +44,7 @@
 
 ## About The Project
 
-In this project, we have created a Resnet model from sratch using Pytorch and trained it on a dataset of ASL images. Since we used ResNet, we named our group "The Three ResNeteers", but it was unfortunately misspelled in the repository name. To train this model, the original dataset provided had 8443 images with 9 classes for the letters A to I. We have augmented the dataset by applying transformation techniques such as rotations, shear, height and width shift. The final training dataset had over 32772 images with corresponding labels. The augmentation script can be found in `data_augmentation.py`. We split the data into 80/20 train/validation and trained the model on the train set using the script `train.py` and made predictions on the validation data using `test.py`. Below you can find information on how to use our model to make predictions.
+I implemented the ResNet-18 model from sratch using Pytorch and trained it on a dataset of ASL images. To train this model, the original dataset was composed of 8443 images with 9 classes for the letters A to I. I have augmented the dataset by applying transformation techniques such as rotations, shear, height and width shift. The final training dataset had over 32772 images with corresponding labels. The augmentation script can be found in `data_augmentation.py`. I split the data using a simple holdout cross-validation scheme, with 80% of the data for training and 20% of the data for validation. I trained the model on the train set using the script `train.py` and made predictions on the validation data using `test.py`. Below you can find information on how to use my model to make predictions.
 
 [Here goes the title with hyperlink](https://github.com/catiaspsilva/README-template)
 
@@ -66,10 +59,6 @@ To recreate the project locally, simply clone this repository in your local comp
 ### Dependencies
 
 Here is a list of all dependencies:
-
-dependencies:
-
-If you use a Pytorch 2.1.0 kernel in Hipergator, then all requirements should already be satisfied.
 
 - python=3.10.12
 - numpy=1.23.5
@@ -144,28 +133,6 @@ python3 test_hard.py "{test_data.npy}" "{test_labels.npy}"
 
 Alternatively, you can run the `test_hard.ipynb`. To do so, open this file and change the file paths for the test data and labels in the main(). Then simply run the cell.
 
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-See the [open issues](https://github.com/catiaspsilva/README-template/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
@@ -174,17 +141,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Authors
 
-Ahmed Rageeb Ahsan - [twitter](https://twitter.com/your_username) - email@example.com
-
 Hajymyrat Geldimuradov - [twitter](https://twitter.com/your_username) - email@example.com
-
-Md Jabir Hossain - [twitter](https://twitter.com/your_username) - email@example.com
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
-- [Catia Silva](https://faculty.eng.ufl.edu/catia-silva/)
 - [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
