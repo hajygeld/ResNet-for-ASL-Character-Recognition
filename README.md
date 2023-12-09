@@ -52,6 +52,12 @@ I implemented the ResNet-18 model from sratch using Pytorch and trained it on a 
 
 <!-- GETTING STARTED -->
 
+## Implementation Details
+
+The implementation of the ResNet architecture centers around a series of 3x3 and 1x1 convolutional layers, with each residual layer composed of multiple residual blocks and max pooling layers used to downsample the image dimensions. A dropout layer, where the probability of a given activation to be zeroed is 0.2, is included after every residual layer. A residual block, as implemented in our architecture, consists of two consecutive 3x3 convolutional layers accompanied by batch normalization and Rectified Linear Unit (ReLU) activation functions. Skip connections with a stride of 2 implemented at the first residual block of every other layer. The 3x3 convolutions focus on extracting important features from the input. The function of the 1x1 convolutional layers is to act as “bottleneck” layers; that is, using a convolution with a 1x1 filter reduces the number of channels of the input such that subsequent convolution operations are more computationally efficient by reducing the number of parameters while maintaining the dimensions of the current input. The final layer comprises an adaptive average pooling layer and a fully connected layer, which will output the class probabilities for the given training example given the multi-class classification problem.
+
+The categorical cross-entropy loss is used as the objective function for the architecture. 
+
 ## Getting Started
 
 To recreate the project locally, simply clone this repository in your local computer. If you would like to train the model and get your weights, you can download our training dataset from this link [augmented_data](https://drive.google.com/drive/folders/1iRBEGGaEIdTs205GTU24fM8xOyqM4CIg?usp=sharing).
