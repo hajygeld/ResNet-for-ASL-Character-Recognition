@@ -46,10 +46,6 @@
 
 I implemented the ResNet-18 model from sratch using Pytorch and trained it on a dataset of ASL images. To train this model, the original dataset was composed of 8443 images with 9 classes for the letters A to I. I have augmented the dataset by applying transformation techniques such as rotations, shear, height and width shift. The final training dataset had over 32772 images with corresponding labels. The augmentation script can be found in `data_augmentation.py`. I split the data using a simple holdout cross-validation scheme, with 80% of the data for training and 20% of the data for validation. I trained the model on the train set using the script `train.py` and made predictions on the validation data using `test.py`. Below you can find information on how to use my model to make predictions.
 
-[Here goes the title with hyperlink](https://github.com/catiaspsilva/README-template)
-
-<!-- You can include tables or images to summarize your results when and if appropriate. -->
-
 <!-- GETTING STARTED -->
 
 ## Implementation Details
