@@ -92,7 +92,7 @@ conda env create -f requirements.yml
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/UF-FundMachineLearning-Fall23/final-project-code-report-thethreemustekeers.git
+   git clone https://github.com/hajygeld/ResNet-for-ASL-Character-Recognition.git
    ```
 2. Setup (and activate) your environment
 
