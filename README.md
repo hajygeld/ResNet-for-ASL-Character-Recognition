@@ -32,8 +32,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#first-test-set">First Test Set</a></li>
+    <li><a href="#alternative-test-set">Alternative Test Set</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#authors">Authors</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -56,7 +57,7 @@ The categorical cross-entropy loss is used as the objective function for the arc
 
 ## Getting Started
 
-To recreate the project locally, simply clone this repository in your local computer. If you would like to train the model and get your weights, you can download our training dataset from this link [augmented_data](https://drive.google.com/drive/folders/1iRBEGGaEIdTs205GTU24fM8xOyqM4CIg?usp=sharing).
+To recreate the project locally, simply clone this repository in your local computer. If you would like to train the model and get your weights, you can download the training dataset from the following link: [augmented_data](https://drive.google.com/drive/folders/1iRBEGGaEIdTs205GTU24fM8xOyqM4CIg?usp=sharing).
 
 ### Dependencies
 
@@ -103,9 +104,9 @@ conda env create -f requirements.yml
 
 ## Usage
 
-The weights of the model are saved in `Best_Model` directory in this repository.
+The weights of the model are found here: [weights](https://drive.google.com/drive/folders/1jw8dWTwUMsE_8mEsMifVZp4QNX_ngwqh?usp=drive_link). 
 
-# Train
+# Training
 
 To train the model from scratch, download the `augmented_data.npy` and `augmented_labels.npy` from the link [augmented_data](https://drive.google.com/drive/folders/1iRBEGGaEIdTs205GTU24fM8xOyqM4CIg?usp=sharing). Place the downloaded files in the empty `data/` folder within the project directory. Then from the project directory, open the train.ipynb file and run the cell. Alternatively, from the terminal, you can run the script `train.py` by
 
@@ -115,9 +116,9 @@ python3 train.py
 
 This would then generate weights and save them in the `Best_Model/` folder within the project directory.
 
-# Easy Test
+# First Test Set
 
-To make predictions on the easy test set, (any test set with only images of ASL characters from A to I), run `test_easy.py` by
+To make predictions on the first test set, (any test set with only images of ASL characters from A to I), run `test_easy.py` by
 
 ```
 python3 test_easy.py "{test_data.npy}" "{test_labels.npy}"
@@ -125,9 +126,9 @@ python3 test_easy.py "{test_data.npy}" "{test_labels.npy}"
 
 Alternatively, you can run the `test_easy.ipynb`. To do so, open this file and change the file paths for the test data and labels in the main(). Then simply run the cell.
 
-# Hard Test
+# Alternative Test Set
 
-To make predictions on the hard test set, (any test set with images of ASL characters from A to I belonging to the 9 classes and an additional class with arbitrary images), run `test_hard.py` by
+To make predictions on the alternative test set, which contains more "complex" training exampples, run `test_hard.py` through
 
 ```
 python3 test_hard.py "{test_data.npy}" "{test_labels.npy}"
@@ -143,7 +144,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Authors
 
-Hajymyrat Geldimuradov - [twitter](https://twitter.com/your_username) - email@example.com
+Hajymyrat Geldimuradov 
 
 <!-- ACKNOWLEDGEMENTS -->
 
